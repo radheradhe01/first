@@ -1,41 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>iOS Calculator</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iOS Calculator Clone</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div id="calculator">
-    <div id="display"></div> 
-
-    <div class="row">
-      <button id="clear">AC</button>
-      <button id="sign">+/-</button>
-      <button id="percent">%</button>
-      <button class="operator">÷</button>
+    <div class="calculator">
+        <div class="display">
+            <div id="display-value">0</div>
+        </div>
+        <div class="buttons">
+            <button class="button function" data-action="clear">AC</button>
+            <button class="button function" data-action="sign">+/-</button>
+            <button class="button function" data-action="percent">%</button>
+            <button class="button operator" data-action="divide">÷</button>
+            <button class="button number" data-action="7">7</button>
+            <button class="button number" data-action="8">8</button>
+            <button class="button number" data-action="9">9</button>
+            <button class="button operator" data-action="multiply">×</button>
+            <button class="button number" data-action="4">4</button>
+            <button class="button number" data-action="5">5</button>
+            <button class="button number" data-action="6">6</button>
+            <button class="button operator" data-action="subtract">−</button>
+            <button class="button number" data-action="1">1</button>
+            <button class="button number" data-action="2">2</button>
+            <button class="button number" data-action="3">3</button>
+            <button class="button operator" data-action="add">+</button>
+            <button class="button number zero" data-action="0">0</button>
+            <button class="button number" data-action="decimal">.</button>
+            <button class="button operator equals" data-action="equals">=</button>
+        </div>
     </div>
-    <div class="row">
-      <button class="digit">7</button>
-      <button class="digit">8</button>
-      <button class="digit">9</button>
-      <button class="operator">×</button>
-    </div>
-    <div class="row">
-      <button class="digit">4</button>
-      <button class="digit">5</button>
-      <button class="digit">6</button>
-      <button class="operator">−</button>
-    </div>
-    <div class="row">
-      <button class="digit">1</button>
-      <button class="digit">2</button>
-      <button class="digit">3</button>
-      <button class="operator">+</button>
-    </div>
-    <div class="row">
-      <button class="digit zero">0</button>
-      <button class="digit">.</button>
-      <button id="equals">=</button>
-    </div>
-  </div>
+    <script src="script.js"></script>
 </body>
 </html>
