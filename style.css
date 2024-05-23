@@ -1,0 +1,40 @@
+/* Overall Calculator Styling */
+#calculator {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #000; /* Black background */
+    border-radius: 15px; /* Rounded corners */
+  }
+  
+  #display {
+    background-color: #1c1c1c;
+    color: #fff;
+    font-size: 24px;
+    text-align: right;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
+  
+  /* Button Styling */
+  button {
+    width: calc(25% - 10px); /* 4 buttons per row, with margin */
+    height: 50px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    margin: 5px;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .operator {
+    background-color: #f0932b; /* Orange for operators */
+  }
+  
+  .zero {
+    width: calc(50% - 10px); /* Zero button takes two columns */
+  }
+  
