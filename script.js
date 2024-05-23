@@ -57,6 +57,18 @@ document.addEventListener('DOMContentLoaded', () => {
             currentInput = (parseFloat(currentInput) * -1).toString();
         } else if (action === 'percent') {
             currentInput = (parseFloat(currentInput) / 100).toString();
+        } else if (action === 'sqrt') {
+            currentInput = (Math.sqrt(parseFloat(currentInput))).toString();
+        } else if (action === 'squared') {
+            currentInput = (Math.pow(parseFloat(currentInput), 2)).toString();
+        } else if (action === 'sin') {
+            currentInput = (Math.sin(parseFloat(currentInput))).toString();
+        } else if (action === 'cos') {
+            currentInput = (Math.cos(parseFloat(currentInput))).toString();
+        } else if (action === 'tan') {
+            currentInput = (Math.tan(parseFloat(currentInput))).toString();
+        } else if (action === 'log') {
+            currentInput = (Math.log10(parseFloat(currentInput))).toString();
         }
         updateDisplay();
     }
