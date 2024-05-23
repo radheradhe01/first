@@ -1,40 +1,58 @@
-/* Overall Calculator Styling */
-#calculator {
-    width: 300px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #000; /* Black background */
-    border-radius: 15px; /* Rounded corners */
-  }
-  
-  #display {
-    background-color: #1c1c1c;
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2;
+}
+
+.calculator {
+    background: #000;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+}
+
+.display {
+    background: #444;
     color: #fff;
-    font-size: 24px;
     text-align: right;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 10px;
-  }
-  
-  /* Button Styling */
-  button {
-    width: calc(25% - 10px); /* 4 buttons per row, with margin */
-    height: 50px;
-    background-color: #333;
+    padding: 20px;
+    font-size: 2em;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.button {
+    border: 1px solid #888;
+    padding: 20px;
+    font-size: 1.5em;
     color: #fff;
-    border: none;
-    margin: 5px;
-    font-size: 20px;
-    border-radius: 10px;
     cursor: pointer;
-  }
-  
-  .operator {
-    background-color: #f0932b; /* Orange for operators */
-  }
-  
-  .zero {
-    width: calc(50% - 10px); /* Zero button takes two columns */
-  }
-  
+}
+
+.button.zero {
+    grid-column: span 2;
+}
+
+.button.function {
+    background: #a5a5a5;
+}
+
+.button.operator {
+    background: #fe9500;
+}
+
+.button.operator.equals {
+    background: #fe9500;
+    grid-row: span 2;
+}
+
+.button:active {
+    opacity: 0.8;
+}
